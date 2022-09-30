@@ -20,3 +20,4 @@ from OpenGL.GL import *
 # }
 
 #testing vertices
+#loading shaders
