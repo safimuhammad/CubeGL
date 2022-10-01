@@ -21,3 +21,4 @@ from OpenGL.GL import *
 
 #testing vertices
 #loading shaders
+#I hate my uni assignments
