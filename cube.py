@@ -14,11 +14,11 @@ from OpenGL.GL import *
 # y out vec4 vCol;
 # void main() {
 # // apply transformations
-# z gl_Position = uPMatrix * uMVMatrix * vec4(aVert, 1.0);
-# // set color
+# z gl_Position = uPMatrix * uMVMatrix * vec4(aVert, 1.0)
 # { vCol = vec4(1.0, 0.0, 0.0, 1.0);
 # }
 
 #testing vertices
 #loading shaders
 #I hate my uni assignments
+#trying shaders
