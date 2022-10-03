@@ -22,3 +22,4 @@ from OpenGL.GL import *
 #loading shaders
 #I hate my uni assignments
 #trying shaders
+#installing libs
