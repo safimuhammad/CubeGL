@@ -23,3 +23,4 @@ from OpenGL.GL import *
 #I hate my uni assignments
 #trying shaders
 #installing libs
+#creating read me
