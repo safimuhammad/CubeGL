@@ -25,3 +25,4 @@ from OpenGL.GL import *
 #installing libs
 #creating read me
 #brainfuck.exe
+#real code comes from today
