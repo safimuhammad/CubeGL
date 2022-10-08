@@ -1,29 +1,37 @@
-import OpenGL
-import glfw
 from OpenGL.GL import *
+from OpenGL.GLUT import *
+from OpenGL.GLU import *
 
-#importing the libraries 
-#starting the learning process
-#checking the shaders and vertices
-# trying the glsw
+w,h= 500,500
+def square():
+    glBegin(GL_QUADS)
+    glVertex2f(100, 100)
+    glVertex2f(200, 100)
+    glVertex2f(200, 200)
+    glVertex2f(100, 200)
+    glEnd()
 
-#version 330 core
-# v in vec3 aVert;
-# w uniform mat4 uMVMatrix;
-# x uniform mat4 uPMatrix;
-# y out vec4 vCol;
-# void main() {
-# // apply transformations
-# z gl_Position = uPMatrix * uMVMatrix * vec4(aVert, 1.0)
-# { vCol = vec4(1.0, 0.0, 0.0, 1.0);
-# }
+def iterate():
+    glViewport(0, 0, 500, 500)
+    glMatrixMode(GL_PROJECTION)
+    glLoadIdentity()
+    glOrtho(0.0, 500, 0.0, 500, 0.0, 1.0)
+    glMatrixMode (GL_MODELVIEW)
+    glLoadIdentity()
 
-#testing vertices
-#loading shaders
-#I hate my uni assignments
-#trying shaders
-#installing libs
-#creating read me
-#brainfuck.exe
-#real code comes from today
-#tommorrow*
+def showScreen():
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
+    glLoadIdentity()
+    iterate()
+    glColor3f(1.0, 0.0, 3.0)
+    square()
+    glutSwapBuffers()
+
+glutInit()
+glutInitDisplayMode(GLUT_RGBA)
+glutInitWindowSize(500, 500)
+glutInitWindowPosition(0, 0)
+wind = glutCreateWindow("OpenGL Coding Practice")
+glutDisplayFunc(showScreen)
+glutIdleFunc(showScreen)
+glutMainLoop()
