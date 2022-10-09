@@ -35,3 +35,4 @@ wind = glutCreateWindow("OpenGL Coding Practice")
 glutDisplayFunc(showScreen)
 glutIdleFunc(showScreen)
 glutMainLoop()
+#time for next quest
